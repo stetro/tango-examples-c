@@ -50,6 +50,9 @@ public class MotionTrackingActivity extends Activity {
         setContentView(R.layout.activity_motion_tracking);
         // OpenGL view where all of the graphics are drawn
         mGLView = (GLSurfaceView) findViewById(R.id.gl_surface_view);
+    
+        // Configure OpenGL renderer
+        mGLView.setEGLContextClientVersion(2);
 
         // Configure OpenGL renderer
         mRenderer = new MotionTrackingRenderer();

@@ -41,6 +41,10 @@ public class VideoOverlayActivity extends Activity
 
     setContentView(R.layout.activity_video_overlay);
     glView = (GLSurfaceView) findViewById(R.id.surfaceview);
+    
+    // Configure OpenGL renderer
+    glView.setEGLContextClientVersion(2);
+
     glView.setRenderer(new Renderer());
 
     mYUVRenderSwitcher = (ToggleButton) findViewById(R.id.yuv_switcher);
