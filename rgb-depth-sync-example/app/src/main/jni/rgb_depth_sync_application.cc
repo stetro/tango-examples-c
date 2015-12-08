@@ -94,6 +94,12 @@ int SynchronizationApplication::TangoSetupConfig() {
     return ret;
   }
 
+  ret = TangoConfig_setBool(tango_config_, "config_enable_color_camera", true);
+  if (ret != TANGO_SUCCESS) {
+      LOGE("Failed to enable color camera.");
+      return ret;
+  }
+
   // Note that it's super important for AR applications that we enable low
   // latency imu integration so that we have pose information available as
   // quickly as possible. Without setting this flag, you'll often receive

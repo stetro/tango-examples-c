@@ -58,7 +58,6 @@ void PointCloudDrawable::Render(glm::mat4 projection_mat, glm::mat4 view_mat,
                                 glm::mat4 model_mat,
                                 const std::vector<float>& vertices) {
   glUseProgram(shader_program_);
-  glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
   mvp_handle_ = glGetUniformLocation(shader_program_, "mvp");
 
   // Calculate model view projection matrix.
