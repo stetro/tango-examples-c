@@ -36,7 +36,7 @@ LOCAL_SRC_FILES := tango_motion_tracking.cpp \
                    $(PROJECT_ROOT_FROM_JNI)/tango-gl/shaders.cpp \
                    $(PROJECT_ROOT_FROM_JNI)/tango-gl/trace.cpp \
                    $(PROJECT_ROOT_FROM_JNI)/tango-gl/transform.cpp
-LOCAL_LDLIBS    := -llog -lGLESv2 -L$(SYSROOT)/usr/lib
+LOCAL_LDLIBS    := -llog -lGLESv3 -L$(SYSROOT)/usr/lib
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-add-path, $(PROJECT_ROOT))

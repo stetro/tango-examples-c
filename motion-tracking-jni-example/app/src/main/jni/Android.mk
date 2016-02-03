@@ -44,7 +44,7 @@ LOCAL_SRC_FILES := jni_interface.cc \
                    $(PROJECT_ROOT_FROM_JNI)/tango-gl/transform.cpp \
                    $(PROJECT_ROOT_FROM_JNI)/tango-gl/util.cpp
 
-LOCAL_LDLIBS    := -llog -lGLESv2 -L$(SYSROOT)/usr/lib
+LOCAL_LDLIBS    := -llog -lGLESv3 -L$(SYSROOT)/usr/lib
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-add-path, $(PROJECT_ROOT))

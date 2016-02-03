@@ -47,7 +47,7 @@ LOCAL_SRC_FILES := augmented_reality_app.cc \
 LOCAL_C_INCLUDES := $(PROJECT_ROOT)/tango-gl/include \
                     $(PROJECT_ROOT)/third-party/glm/
 
-LOCAL_LDLIBS    := -llog -lGLESv2 -L$(SYSROOT)/usr/lib
+LOCAL_LDLIBS    := -llog -lGLESv3 -L$(SYSROOT)/usr/lib
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-add-path, $(PROJECT_ROOT))
