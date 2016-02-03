@@ -28,6 +28,7 @@ const std::string kPointCloudVertexShader =
     "varying vec4 v_color;\n"
     "void main() {\n"
     "  gl_Position = mvp*vertex;\n"
+    "  gl_PointSize = 4.0;\n"
     "  v_color = vertex;\n"
     "}\n";
 const std::string kPointCloudFragmentShader =
